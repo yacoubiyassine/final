@@ -1,0 +1,10 @@
+.reg{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.reg input{
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+}

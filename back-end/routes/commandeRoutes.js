@@ -1,0 +1,10 @@
+const express=require('express')
+const { getcommande, postcommande, updatecommande, deletecommande, mypcommandes } = require('../controlles/commandeControl')
+const { isAuth } = require('../middlewear/isAuth')
+const commandeRoutes=express.Router()
+commandeRoutes.get('/',getcommande)
+commandeRoutes.post('/post',isAuth,postcommande)
+commandeRoutes.put('/update/:id',updatecommande)
+commandeRoutes.delete('/del/:id',deletecommande)
+commandeRoutes.get('/mycommande',isAuth,mypcommandes)
+module.exports=commandeRoutes

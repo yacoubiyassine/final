@@ -1,0 +1,15 @@
+.btn{
+    border: none;
+    background-color: rgb(14, 109, 235);
+   color: white;
+   
+}
+.fish-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+.fish-container img{
+    height: 180px;
+}
